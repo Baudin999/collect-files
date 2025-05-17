@@ -47,7 +47,8 @@
     "_esy",
     "npm-debug.log",
     "yarn-debug.log",
-    "yarn-error.log"
+    "yarn-error.log",
+    "collect-files.config.json"
   ],
   "ignoreExtensions": [
     "exe",
@@ -151,5 +152,7 @@
     "swo",
     "tmp"
   ],
-  "includeExtensions": []
+  "includeExtensions": [],
+  "metadataSuffix": ".meta.txt",
+  "compressionRules": []
 }

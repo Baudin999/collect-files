@@ -1,25 +1,47 @@
 {
-  "name": "collect-files",
-  "version": "1.0.0",
-  "description": "A tool to recursively collect files into a markdown document",
-  "main": "collect_files.js",
-  "bin": {
-    "collect-files": "./collect_files.js"
-  },
-  "scripts": {
-    "start": "node collect_files.js",
-    "build": "powershell -ExecutionPolicy Bypass -File ./publish.ps1",
-    "publish": "pkg collect_files.js --target node16-win-x64 --output ./build/collect_files.exe"
-  },
-  "keywords": [
-    "files",
-    "documentation",
-    "markdown"
-  ],
-  "author": "Baudin999",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "pkg": "^5.8.1"
-  }
+    "name": "collect-files",
+    "version": "0.0.1",
+    "description": "A tool to recursively collect files from a directory and its subdirectories into a single markdown output, with support for metadata and flexible ignore patterns.",
+    "main": "src/main.js",
+    "bin": {
+        "collect-files": "./collect_files.js"
+    },
+    "scripts": {
+        "start": "node src/main.js",
+        "build": "pkg src/main.js --target node16-win-x64 --output ./build/collect-files.exe",
+        "install-local-win": "powershell -ExecutionPolicy Bypass -File ./local-win-install.ps1",
+        "test": "echo \"Error: no test specified (yet)\" && exit 0",
+        "prepublishOnly": "npm test"
+    },
+    "files": [
+        "src/",
+        "README.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "cli",
+        "markdown",
+        "documentation",
+        "code-collection",
+        "file-aggregator",
+        "dev-tool"
+    ],
+    "author": "Baudin999",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "pkg": "^5.8.1"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Baudin999/collect-files.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Baudin999/collect-files/issues"
+    },
+    "homepage": "https://github.com/Baudin999/collect-files#readme",
+    "preferGlobal": true
 }
