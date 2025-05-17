@@ -1,15 +1,12 @@
 {
   "output": "output.md",
   "ignore": [
-    "collect-files.config.json",
     ".git",
     ".svn",
     ".hg",
     ".vscode",
     ".idea",
     ".vs",
-    "*.sublime-workspace",
-    "*.sublime-project",
     ".fleet",
     ".DS_Store",
     "Thumbs.db",
@@ -23,7 +20,7 @@
     "out",
     "bin",
     "obj",
-    "wwwroot/dist",
+    "wwwroot",
     "elm-stuff",
     "_build",
     "zig-cache",
@@ -31,8 +28,26 @@
     ".next",
     ".nuxt",
     ".svelte-kit",
-    "public/build",
-    ".angular/cache"
+    ".angular",
+    "coverage",
+    "lcov-report",
+    ".nyc_output",
+    "JacocoReport",
+    "TestResults",
+    ".env",
+    "__pycache__",
+    ".venv",
+    "venv",
+    "env",
+    ".tox",
+    ".nox",
+    ".eggs",
+    ".gradle",
+    "tmp",
+    "_esy",
+    "npm-debug.log",
+    "yarn-debug.log",
+    "yarn-error.log"
   ],
   "ignoreExtensions": [
     "exe",
@@ -43,7 +58,6 @@
     "a",
     "lib",
     "bundle",
-    "obj",
     "pdb",
     "idb",
     "exp",
@@ -132,7 +146,10 @@
     "lot",
     "fls",
     "toc",
-    "bak"
+    "bak",
+    "swp",
+    "swo",
+    "tmp"
   ],
   "includeExtensions": []
 }
