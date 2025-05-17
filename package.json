@@ -1,0 +1,25 @@
+{
+  "name": "collect-files",
+  "version": "1.0.0",
+  "description": "A tool to recursively collect files into a markdown document",
+  "main": "collect_files.js",
+  "bin": {
+    "collect-files": "./collect_files.js"
+  },
+  "scripts": {
+    "start": "node collect_files.js",
+    "build": "powershell -ExecutionPolicy Bypass -File ./publish.ps1",
+    "publish": "pkg collect_files.js --target node16-win-x64 --output ./build/collect_files.exe"
+  },
+  "keywords": [
+    "files",
+    "documentation",
+    "markdown"
+  ],
+  "author": "Baudin999",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
